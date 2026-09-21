@@ -1,0 +1,50 @@
+.VPNavBarTitle > a.title > img.VPImage,
+.VPNavBarTitle > a.title > span {
+  display: none !important;
+}
+
+.custom-nav-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+}
+
+.logo-dark,
+.logo-light {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.dark .logo-dark {
+  display: block;
+}
+
+.dark .logo-light {
+  display: none;
+}
+
+.logo-light {
+  display: block;
+}
+
+.hero-dark {
+  display: none;
+}
+
+.dark .hero-dark {
+  display: block;
+}
+
+.dark .hero-light {
+  display: none;
+}
+
+.hero-light {
+  display: block;
+}

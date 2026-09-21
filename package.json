@@ -1,11 +1,11 @@
 {
-  "name": "bash-docs",
+  "name": "powershell-docs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CEED-2026/bash-docs.git"
+    "url": "https://github.com/CEED-2026/powershell-docs.git"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
