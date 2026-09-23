@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 const microsoftDocs = 'https://learn.microsoft.com/powershell/'
-const psHome = 'https://powershell-main-bdd74d.gitlab.io/'
 
 const enContent = [
   { text: 'Introduction to PowerShell', link: '/en/content/000-intro' },
@@ -35,8 +34,7 @@ export default defineConfig({
             items: [
               { text: 'Microsoft PowerShell documentation', link: microsoftDocs }
             ]
-          },
-          { text: 'Back to PS Home', link: psHome }
+          }
         ],
         sidebar: {
           '/en/': [
@@ -47,10 +45,6 @@ export default defineConfig({
               items: [
                 { text: 'Microsoft PowerShell documentation', link: microsoftDocs }
               ]
-            },
-            {
-              text: 'Back to PS Home',
-              items: [{ text: 'PS Home', link: psHome }]
             }
           ]
         }
@@ -75,8 +69,7 @@ export default defineConfig({
             items: [
               { text: 'Documentación de Microsoft PowerShell', link: microsoftDocs }
             ]
-          },
-          { text: 'Volver a PS Home', link: psHome }
+          }
         ],
         sidebar: {
           '/es/': [
@@ -87,10 +80,6 @@ export default defineConfig({
               items: [
                 { text: 'Documentación de Microsoft PowerShell', link: microsoftDocs }
               ]
-            },
-            {
-              text: 'Volver a PS Home',
-              items: [{ text: 'PS Home', link: psHome }]
             }
           ]
         }

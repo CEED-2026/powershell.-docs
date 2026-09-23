@@ -421,3 +421,49 @@ Set-ExecutionPolicy -ExecutionPolicy Restricted
 ```
 
 **Warning:** Changing the execution policy can compromise system security. Only make modifications if you fully trust the scripts being run.
+
+## Exercises
+
+These exercises are designed to improve your PowerShell skills using a Windows Server 2022 environment.
+
+### Exercise 1: Check Installed PowerShell Version
+
+1. Verify which version of PowerShell is currently installed.
+2. Install PowerShell Core if it is not present.
+3. Confirm that PowerShell Core has been installed correctly.
+
+### Exercise 2: Using Get-Help
+
+1. Use `Get-Help` to get information about the `Get-Process` cmdlet.
+2. View practical examples of `Get-Process` usage.
+3. Consult the complete documentation for `Get-Process`.
+
+### Exercise 3: Using Get-Command
+
+1. List all available cmdlets on the system.
+2. Filter cmdlets whose name contains "Service".
+3. Get detailed information about the `Get-Service` cmdlet.
+
+### Exercise 4: Using Get-Member
+
+1. Use `Get-Process` to get a list of running processes.
+2. Pipe the output of `Get-Process` to `Get-Member` to explore available properties and methods.
+3. Create a custom table showing the process name and its ID.
+
+### Exercise 5: Using Export-Csv
+
+1. List all available services on the system.
+2. Filter services in "Running" status.
+3. Export the list of running services to a CSV file called `RunningServices.csv`.
+
+### Exercise 6: Using Select-Object
+
+1. Get a list of running processes.
+2. Show only the name, ID, and amount of memory used by each process.
+
+### Exercise 7: Managing Execution Policy
+
+1. Check the current execution policy.
+2. Change the execution policy to "Restricted" to block scripts.
+3. Create a test script and verify it is blocked.
+4. Restore the execution policy to "RemoteSigned".

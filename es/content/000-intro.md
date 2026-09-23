@@ -421,3 +421,49 @@ Set-ExecutionPolicy -ExecutionPolicy Restricted
 ```
 
 **Advertencia:** Cambiar la política de ejecución puede comprometer la seguridad del sistema. Realice modificaciones solo si confía plenamente en los scripts que se ejecutarán.
+
+## Ejercicios
+
+Estos ejercicios están diseñados para mejorar tus habilidades en PowerShell utilizando un entorno de Windows Server 2022.
+
+### Ejercicio 1: Comprobar versión de PowerShell instalada
+
+1. Verificar qué versión de PowerShell está instalada actualmente.
+2. Instalar PowerShell Core si no está presente.
+3. Confirmar que PowerShell Core se ha instalado correctamente.
+
+### Ejercicio 2: Uso de Get-Help
+
+1. Utilizar `Get-Help` para obtener información sobre el cmdlet `Get-Process`.
+2. Visualizar ejemplos prácticos del uso de `Get-Process`.
+3. Consultar la documentación completa de `Get-Process`.
+
+### Ejercicio 3: Uso de Get-Command
+
+1. Listar todos los cmdlets disponibles en el sistema.
+2. Filtrar los cmdlets cuyo nombre contenga "Service".
+3. Obtener información detallada sobre el cmdlet `Get-Service`.
+
+### Ejercicio 4: Uso de Get-Member
+
+1. Utilizar `Get-Process` para obtener una lista de procesos en ejecución.
+2. Pasar la salida de `Get-Process` a `Get-Member` para explorar las propiedades y métodos disponibles.
+3. Crear una tabla personalizada que muestre el nombre del proceso y su ID.
+
+### Ejercicio 5: Uso de Export-Csv
+
+1. Listar todos los servicios disponibles en el sistema.
+2. Filtrar los servicios en estado "Running".
+3. Exportar la lista de servicios en ejecución a un archivo CSV llamado `ServiciosEnEjecucion.csv`.
+
+### Ejercicio 6: Uso de Select-Object
+
+1. Obtener una lista de procesos en ejecución.
+2. Mostrar solo el nombre, el ID y la cantidad de memoria utilizada por cada proceso.
+
+### Ejercicio 7: Gestión de Execution Policy
+
+1. Consultar la política de ejecución actual.
+2. Cambiar la política de ejecución a "Restricted" para bloquear scripts.
+3. Crear un script de prueba y comprobar que está bloqueado.
+4. Restaurar la política de ejecución a "RemoteSigned".
