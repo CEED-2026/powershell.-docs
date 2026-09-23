@@ -14,9 +14,7 @@ These exercises are designed to improve your PowerShell skills using a Windows S
 
 **Solution:**
 
-powershell
-
-```
+```powershell
 # Check installed version
 $PSVersionTable
 
@@ -35,9 +33,7 @@ pwsh -v
 
 **Solution:**
 
-powershell
-
-```
+```powershell
 # Get general information
 Get-Help Get-Process
 
@@ -56,9 +52,7 @@ Get-Help Get-Process -Full
 
 **Solution:**
 
-powershell
-
-```
+```powershell
 # List all cmdlets
 Get-Command
 
@@ -77,9 +71,7 @@ Get-Command Get-Service
 
 **Solution:**
 
-powershell
-
-```
+```powershell
 # List processes and explore properties/methods
 Get-Process | Get-Member
 
@@ -95,9 +87,7 @@ Get-Process | Select-Object -Property Name, Id
 
 **Solution:**
 
-powershell
-
-```
+```powershell
 # List services and filter by status
 Get-Service | Where-Object { $_.Status -eq 'Running' } | Export-Csv -Path C:\Reports\RunningServices.csv -NoTypeInformation
 ```
@@ -109,9 +99,7 @@ Get-Service | Where-Object { $_.Status -eq 'Running' } | Export-Csv -Path C:\Rep
 
 **Solution:**
 
-powershell
-
-```
+```powershell
 Get-Process | Select-Object -Property Name, Id, WorkingSet
 ```
 
@@ -124,9 +112,7 @@ Get-Process | Select-Object -Property Name, Id, WorkingSet
 
 **Solution:**
 
-powershell
-
-```
+```powershell
 # Change execution policy to Restricted
 Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser
 

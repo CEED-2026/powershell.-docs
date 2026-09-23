@@ -14,9 +14,7 @@ Estos ejercicios están diseñados para mejorar tus habilidades en PowerShell ut
 
 **Solución:**
 
-powershell
-
-```
+```powershell
 # Verificar versión instalada
 $PSVersionTable
 
@@ -35,9 +33,7 @@ pwsh -v
 
 **Solución:**
 
-powershell
-
-```
+```powershell
 # Obtener información general
 Get-Help Get-Process
 
@@ -56,9 +52,7 @@ Get-Help Get-Process -Full
 
 **Solución:**
 
-powershell
-
-```
+```powershell
 # Listar todos los cmdlets
 Get-Command
 
@@ -77,9 +71,7 @@ Get-Command Get-Service
 
 **Solución:**
 
-powershell
-
-```
+```powershell
 # Listar procesos y explorar propiedades/métodos
 Get-Process | Get-Member
 
@@ -95,9 +87,7 @@ Get-Process | Select-Object -Property Name, Id
 
 **Solución:**
 
-powershell
-
-```
+```powershell
 # Listar servicios y filtrar por estado
 Get-Service | Where-Object { $_.Status -eq 'Running' } | Export-Csv -Path C:\Reports\ServiciosEnEjecucion.csv -NoTypeInformation
 ```
@@ -109,9 +99,7 @@ Get-Service | Where-Object { $_.Status -eq 'Running' } | Export-Csv -Path C:\Rep
 
 **Solución:**
 
-powershell
-
-```
+```powershell
 Get-Process | Select-Object -Property Name, Id, WorkingSet
 ```
 
@@ -124,9 +112,7 @@ Get-Process | Select-Object -Property Name, Id, WorkingSet
 
 **Solución:**
 
-powershell
-
-```
+```powershell
 # Cambiar política de ejecución a Restricted
 Set-ExecutionPolicy -ExecutionPolicy Restricted -Scope CurrentUser
 

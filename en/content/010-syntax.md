@@ -10,17 +10,13 @@ Used to document scripts and provide context.
 
 ### Single-line comment
 
-powershell
-
-```
+```powershell
 # This is a comment
 ```
 
 ### Multi-line comment
 
-powershell
-
-```
+```powershell
 <#
 This is a
 multi-line comment
@@ -39,9 +35,7 @@ It is not mandatory to declare variables beforehand in PowerShell; they are crea
 
 1. **Implicit declaration without type:**
 
-powershell
-
-```
+```powershell
 $variable = "Hello World"
 $number = 42
 ```
@@ -50,9 +44,7 @@ In this case, PowerShell automatically assigns the type based on the provided va
 
 2. **Explicit declaration with type:**
 
-powershell
-
-```
+```powershell
 [int]$number = 10
 [string]$text = "Example Text"
 ```
@@ -61,9 +53,7 @@ Here the variable type is specified.
 
 3. **Using `New-Variable`:**
 
-powershell
-
-```
+```powershell
 New-Variable -Name "myVariable" -Value "Hello World" -Option ReadOnly
 ```
 
@@ -73,9 +63,7 @@ Parameters allow declaring and typing variables in the context of a function.
 
 4. **Declaration without initialization:**
 
-powershell
-
-```
+```powershell
 $noValue
 $noValue = "Now I have a value"
 ```
@@ -106,9 +94,7 @@ TypeDescription
 
 #### Example:
 
-powershell
-
-```
+```powershell
 # Declare explicit types
 [int]$number = 10
 [string]$text = "Example Text"
@@ -120,34 +106,26 @@ powershell
 
 - To know the value of a variable, simply call it:
 
-powershell
-
-```
+```powershell
 Write-Output $myVariable
 ```
 
 - To know its type, use the `GetType()` method and `Name` property:
 
-powershell
-
-```
+```powershell
 $myVariable.GetType().Name
 ```
 
 #### Example:
 
-powershell
-
-```
+```powershell
 $variable = 123
 Write-Output "Type: $($variable.GetType().Name)"
 ```
 
 #### Terminal output:
 
-plaintext
-
-```
+```plaintext
 Type: Int32
 ```
 
@@ -157,9 +135,7 @@ PowerShell allows converting variable types easily using explicit casting.
 
 #### Example:
 
-powershell
-
-```
+```powershell
 # Convert from string to integer
 [string]$text = "123"
 [int]$number = [int]$text
@@ -197,9 +173,7 @@ OperatorDescriptionExampleResult
 
 ### Practical example:
 
-powershell
-
-```
+```powershell
 # Declare variables
 $a = 10
 $b = 3
@@ -249,9 +223,7 @@ OperatorDescriptionExampleResult
 
 ### Practical example:
 
-powershell
-
-```
+```powershell
 # Basic comparisons
 $a = 5
 $b = 10
@@ -285,9 +257,7 @@ OperatorDescriptionExampleResult
 
 ### Practical example:
 
-powershell
-
-```
+```powershell
 # Declare variables
 $a = 7
 $b = 3
@@ -316,9 +286,7 @@ OperatorDescriptionExampleResult
 
 ### Practical example:
 
-powershell
-
-```
+```powershell
 # Bitwise operations
 Write-Output (5 -band 3)    # 1
 Write-Output (5 -bor 3)     # 7
@@ -346,9 +314,7 @@ OperatorDescriptionExampleResult
 
 ### Practical example:
 
-powershell
-
-```
+```powershell
 # Basic assignment
 $a = 5
 

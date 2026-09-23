@@ -60,9 +60,7 @@ PowerShell cuenta con diferentes versiones, diseñadas para cubrir distintas nec
 
 Para comprobar qué versión de PowerShell está instalada en tu sistema, usa el comando:
 
-powershell
-
-```
+```powershell
 $PSVersionTable
 ```
 
@@ -79,9 +77,7 @@ Se recomienda instalar la versión más reciente (PowerShell 7) para garantizar 
 1. Instalar Homebrew (si no está instalado).
 2. Ejecutar el comando:
 
-bash
-
-```
+```bash
 brew install --cask powershell
 ```
 
@@ -89,17 +85,13 @@ brew install --cask powershell
 
 1. Actualizar el sistema:
 
-bash
-
-```
+```bash
 sudo apt update && sudo apt upgrade
 ```
 
 2. Agregar el repositorio de PowerShell:
 
-bash
-
-```
+```bash
 sudo apt install -y powershell
 ```
 
@@ -107,9 +99,7 @@ sudo apt install -y powershell
 
 Los scripts de PowerShell tienen la extensión `.ps1`. A continuación, se muestra un ejemplo de script simple:
 
-powershell
-
-```
+```powershell
 # Script para saludar al usuario
 echo "Ingrese su nombre:"
 $nombre = Read-Host
@@ -122,9 +112,7 @@ Para ejecutar un script:
 2. Navegar al directorio donde se encuentra el script.
 3. Ejecutar:
 
-powershell
-
-```
+```powershell
 .\nombre_del_script.ps1
 ```
 
@@ -160,9 +148,7 @@ PowerShell ISE (Integrated Scripting Environment) es una herramienta gráfica in
 2. **Crear un script**:
    - Escribe el siguiente código en el editor:
 
-powershell
-
-```
+```powershell
 Write-Output "Hola desde PowerShell ISE"
 ```
 
@@ -210,9 +196,7 @@ El cmdlet `Get-Help` proporciona documentación y ejemplos de uso para cualquier
 
 1. Obtener información básica sobre un cmdlet:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process
 ```
 
@@ -227,9 +211,7 @@ SYNOPSIS
 
 2. Ver ejemplos prácticos:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process -Examples
 ```
 
@@ -248,9 +230,7 @@ EXAMPLES
 
 3. Obtener información detallada:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process -Detailed
 ```
 
@@ -268,9 +248,7 @@ SYNTAX
 
 4. Abrir la documentación completa con descripciones técnicas:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process -Full
 ```
 
@@ -289,9 +267,7 @@ DETAILED DESCRIPTION
 
 5. Actualizar los archivos de ayuda locales:
 
-powershell
-
-```
+```powershell
 Update-Help
 ```
 
@@ -303,9 +279,7 @@ El cmdlet `Get-Command` lista todos los cmdlets, funciones, alias y scripts disp
 
 1. Obtener una lista de todos los cmdlets disponibles:
 
-powershell
-
-```
+```powershell
 Get-Command
 ```
 
@@ -321,9 +295,7 @@ Cmdlet          Clear-Content                                      7.0.0.0   Mic
 
 2. Filtrar comandos específicos por tipo:
 
-powershell
-
-```
+```powershell
 Get-Command -CommandType Cmdlet
 ```
 
@@ -339,9 +311,7 @@ Cmdlet          Start-Process                                      7.0.0.0   Mic
 
 3. Buscar un cmdlet específico:
 
-powershell
-
-```
+```powershell
 Get-Command Get-Process
 ```
 
@@ -361,9 +331,7 @@ El cmdlet `Get-Member` muestra las propiedades y métodos de los objetos que se 
 
 1. Examinar las propiedades y métodos de un objeto:
 
-powershell
-
-```
+```powershell
 Get-Process | Get-Member
 ```
 
@@ -379,9 +347,7 @@ Name                     AliasProperty   Name = ProcessName
 
 2. Ver solo propiedades de un objeto:
 
-powershell
-
-```
+```powershell
 Get-Process | Get-Member -MemberType Property
 ```
 
@@ -397,9 +363,7 @@ Id                       Property        int Id {get;}
 
 3. Ver solo métodos de un objeto:
 
-powershell
-
-```
+```powershell
 Get-Process | Get-Member -MemberType Method
 ```
 
@@ -432,17 +396,13 @@ Aunque la política de ejecución no restringe la ejecución interactiva de coma
 
 1. Consultar la política actual:
 
-powershell
-
-```
+```powershell
 Get-ExecutionPolicy
 ```
 
 2. Cambiar la política de ejecución:
 
-powershell
-
-```
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 
@@ -450,17 +410,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 3. Ver las políticas aplicadas en diferentes contextos (usuario, máquina, proceso):
 
-powershell
-
-```
+```powershell
 Get-ExecutionPolicy -List
 ```
 
 4. Restablecer la configuración de política a su valor más restrictivo:
 
-powershell
-
-```
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy Restricted
 ```
 

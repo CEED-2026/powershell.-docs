@@ -10,17 +10,13 @@ Se usan para documentar scripts y proporcionar contexto.
 
 ### Comentario de una línea
 
-powershell
-
-```
+```powershell
 # Este es un comentario
 ```
 
 ### Comentario de varias líneas
 
-powershell
-
-```
+```powershell
 <#
 Este es un comentario
 de varias líneas
@@ -39,9 +35,7 @@ No es obligatorio declarar previamente las variables en PowerShell; estas se cre
 
 1. **Declaración implícita sin tipo:**
 
-powershell
-
-```
+```powershell
 $variable = "Hola Mundo"
 $numero = 42
 ```
@@ -50,9 +44,7 @@ En este caso, PowerShell asigna automáticamente el tipo según el valor proporc
 
 2. **Declaración explícita con tipo:**
 
-powershell
-
-```
+```powershell
 [int]$numero = 10
 [string]$texto = "Texto Ejemplo"
 ```
@@ -61,9 +53,7 @@ Aquí se especifica el tipo de la variable.
 
 3. **Usando `New-Variable`:**
 
-powershell
-
-```
+```powershell
 New-Variable -Name "miVariable" -Value "Hola Mundo" -Option ReadOnly
 ```
 
@@ -73,9 +63,7 @@ Los parámetros permiten declarar y tipar variables en el contexto de una funci�
 
 4. **Declaración sin inicialización:**
 
-powershell
-
-```
+```powershell
 $sinValor
 $sinValor = "Ahora tengo un valor"
 ```
@@ -106,9 +94,7 @@ TipoDescripción
 
 #### Ejemplo:
 
-powershell
-
-```
+```powershell
 # Declarar tipos explícitos
 [int]$numero = 10
 [string]$texto = "Texto Ejemplo"
@@ -120,34 +106,26 @@ powershell
 
 - Para conocer el valor de una variable, simplemente llámala:
 
-powershell
-
-```
+```powershell
 Write-Output $miVariable
 ```
 
 - Para conocer su tipo, utiliza el método `GetType()` y la propiedad `Name`:
 
-powershell
-
-```
+```powershell
 $miVariable.GetType().Name
 ```
 
 #### Ejemplo:
 
-powershell
-
-```
+```powershell
 $variable = 123
 Write-Output "Tipo: $($variable.GetType().Name)"
 ```
 
 #### Salida por terminal:
 
-plaintext
-
-```
+```plaintext
 Tipo: Int32
 ```
 
@@ -157,9 +135,7 @@ PowerShell permite convertir tipos de variables fácilmente utilizando castings 
 
 #### Ejemplo:
 
-powershell
-
-```
+```powershell
 # Convertir de string a entero
 [string]$texto = "123"
 [int]$numero = [int]$texto
@@ -197,9 +173,7 @@ OperadorDescripciónEjemploResultado
 
 ### Ejemplo práctico:
 
-powershell
-
-```
+```powershell
 # Declarar variables
 $a = 10
 $b = 3
@@ -249,9 +223,7 @@ OperadorDescripciónEjemploResultado
 
 ### Ejemplo práctico:
 
-powershell
-
-```
+```powershell
 # Comparaciones básicas
 $a = 5
 $b = 10
@@ -285,9 +257,7 @@ OperadorDescripciónEjemploResultado
 
 ### Ejemplo práctico:
 
-powershell
-
-```
+```powershell
 # Declarar variables
 $a = 7
 $b = 3
@@ -316,9 +286,7 @@ OperadorDescripciónEjemploResultado
 
 ### Ejemplo práctico:
 
-powershell
-
-```
+```powershell
 # Operaciones binarias
 Write-Output (5 -band 3)    # 1
 Write-Output (5 -bor 3)     # 7
@@ -346,9 +314,7 @@ OperadorDescripciónEjemploResultado
 
 ### Ejemplo práctico:
 
-powershell
-
-```
+```powershell
 # Asignación básica
 $a = 5
 

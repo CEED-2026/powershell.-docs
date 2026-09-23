@@ -60,9 +60,7 @@ PowerShell comes in different versions designed to cover different needs:
 
 To check which version of PowerShell is installed on your system, use:
 
-powershell
-
-```
+```powershell
 $PSVersionTable
 ```
 
@@ -79,9 +77,7 @@ It is recommended to install the most recent version (PowerShell 7) to ensure co
 1. Install Homebrew (if not installed).
 2. Run the command:
 
-bash
-
-```
+```bash
 brew install --cask powershell
 ```
 
@@ -89,17 +85,13 @@ brew install --cask powershell
 
 1. Update the system:
 
-bash
-
-```
+```bash
 sudo apt update && sudo apt upgrade
 ```
 
 2. Add the PowerShell repository:
 
-bash
-
-```
+```bash
 sudo apt install -y powershell
 ```
 
@@ -107,9 +99,7 @@ sudo apt install -y powershell
 
 PowerShell scripts have the `.ps1` extension. Below is an example of a simple script:
 
-powershell
-
-```
+```powershell
 # Script to greet the user
 echo "Enter your name:"
 $name = Read-Host
@@ -122,9 +112,7 @@ To run a script:
 2. Navigate to the directory where the script is located.
 3. Run:
 
-powershell
-
-```
+```powershell
 .\script_name.ps1
 ```
 
@@ -160,9 +148,7 @@ PowerShell ISE (Integrated Scripting Environment) is a graphical tool integrated
 2. **Create a script**:
    - Type the following code in the editor:
 
-powershell
-
-```
+```powershell
 Write-Output "Hello from PowerShell ISE"
 ```
 
@@ -210,9 +196,7 @@ The `Get-Help` cmdlet provides documentation and usage examples for any cmdlet, 
 
 1. Get basic information about a cmdlet:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process
 ```
 
@@ -227,9 +211,7 @@ SYNOPSIS
 
 2. View practical examples:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process -Examples
 ```
 
@@ -248,9 +230,7 @@ EXAMPLES
 
 3. Get detailed information:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process -Detailed
 ```
 
@@ -268,9 +248,7 @@ SYNTAX
 
 4. Open complete documentation with technical descriptions:
 
-powershell
-
-```
+```powershell
 Get-Help Get-Process -Full
 ```
 
@@ -289,9 +267,7 @@ DETAILED DESCRIPTION
 
 5. Update local help files:
 
-powershell
-
-```
+```powershell
 Update-Help
 ```
 
@@ -303,9 +279,7 @@ The `Get-Command` cmdlet lists all cmdlets, functions, aliases, and scripts avai
 
 1. Get a list of all available cmdlets:
 
-powershell
-
-```
+```powershell
 Get-Command
 ```
 
@@ -321,9 +295,7 @@ Cmdlet          Clear-Content                                      7.0.0.0   Mic
 
 2. Filter specific commands by type:
 
-powershell
-
-```
+```powershell
 Get-Command -CommandType Cmdlet
 ```
 
@@ -339,9 +311,7 @@ Cmdlet          Start-Process                                      7.0.0.0   Mic
 
 3. Search for a specific cmdlet:
 
-powershell
-
-```
+```powershell
 Get-Command Get-Process
 ```
 
@@ -361,9 +331,7 @@ The `Get-Member` cmdlet displays the properties and methods of objects passed vi
 
 1. Examine the properties and methods of an object:
 
-powershell
-
-```
+```powershell
 Get-Process | Get-Member
 ```
 
@@ -379,9 +347,7 @@ Name                     AliasProperty   Name = ProcessName
 
 2. View only object properties:
 
-powershell
-
-```
+```powershell
 Get-Process | Get-Member -MemberType Property
 ```
 
@@ -397,9 +363,7 @@ Id                       Property        int Id {get;}
 
 3. View only object methods:
 
-powershell
-
-```
+```powershell
 Get-Process | Get-Member -MemberType Method
 ```
 
@@ -432,17 +396,13 @@ Although the execution policy does not restrict interactive command execution, i
 
 1. Check the current policy:
 
-powershell
-
-```
+```powershell
 Get-ExecutionPolicy
 ```
 
 2. Change the execution policy:
 
-powershell
-
-```
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 
@@ -450,17 +410,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 3. View policies applied in different contexts (user, machine, process):
 
-powershell
-
-```
+```powershell
 Get-ExecutionPolicy -List
 ```
 
 4. Reset policy to its most restrictive value:
 
-powershell
-
-```
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy Restricted
 ```
 

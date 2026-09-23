@@ -1,5 +1,7 @@
 ---
 title: ""
+sidebar: false
+outline: false
 ---
 
 # PowerShell
@@ -8,5 +10,5 @@ Theoretical fundamentals
 
 System administration with PowerShell
 
-![PowerShell Fundamentals](/Powershell.svg){.hero-dark}
-![PowerShell Fundamentals](/Powershell.svg){.hero-light}
+![PowerShell Fundamentals](/Powershell.svg)
+![PowerShell Fundamentals](/Powershell.svg)

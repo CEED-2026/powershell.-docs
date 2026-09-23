@@ -22,6 +22,7 @@ export default defineConfig({
       title: 'PowerShell Fundamentals',
       description: 'Theoretical fundamentals for system administration with PowerShell',
       themeConfig: {
+        home: '/en/',
         logo: '/Powershell.svg',
         nav: [
           {
@@ -61,6 +62,7 @@ export default defineConfig({
       title: 'PS Fundamentos',
       description: 'Fundamentos teóricos para la administración de sistemas con PowerShell',
       themeConfig: {
+        home: '/es/',
         logo: '/Powershell.svg',
         nav: [
           {
