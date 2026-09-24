@@ -1,0 +1,23 @@
+.VPNavBarTitle > a.title > img.VPImage,
+.VPNavBarTitle > a.title > span {
+  display: none !important;
+}
+
+.custom-nav-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+}
+
+.custom-nav-title img {
+  width: 28px;
+  height: 28px;
+}
+
+.title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
